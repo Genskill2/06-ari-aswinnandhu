@@ -8,7 +8,7 @@ string ari(string s)
 {
  int i;
  float cha=0.000000;
- float word=0.000000;
+ float words=0.000000;
  float sentence=0.000000;
  for(i=0;s[i]!='0';i++)
  {
@@ -36,37 +36,80 @@ string ari(string s)
 
  
  float result;
- result= (4.71*cha/words) + (0.5*words/sentences) - 21.43;
+ result= (4.71*cha/words) + (0.5*words/sentence) - 21.43;
  int x;
+ string w;
  x=ceil(result);
  if(x==1)
- return Kindergarden;
+ {
+  w= "Kindergarden";
+  return w;
+ }
  if(x==2)
- return First/Second Grade;
+ {
+  w="First/Second Grade";
+  return w;
+ }
  if(x==3)
- return Third Grade;
+ {
+  w="Third Grade";
+  return w;
+ }
  if(x==4)
- return Fourth Grade;
+ {
+ w="Fourth Grade";
+ return w;
+}
  if(x==5)
- return Fifth Grade;
+  {
+ w="Fifth Grade";
+ return w;
+}
  if(x==6)
- return Sixth Grade;
+  {
+ w="Sixth Grade";
+ return w;
+}
  if(x==7)
- return Seventh Grade;
+  {
+ w="Seventh Grade";
+ return w;
+}
  if(x==8)
- return Eigth Grade;
+  {
+ w="Eigth Grade";
+ return w;
+}
  if(x==9)
- return Ninth Grade;
+ {
+ w="Ninth Grade";
+ return w;
+}
  if(x==10)
- return Tenth Grade;
+  {
+ w="Tenth Grade";
+ return w;
+}
  if(x==11)
- return Eleventh Grade;
+  {
+ w="Eleventh Grade";
+ return w;
+}
  if(x==12)
- return Twelfth Grade;
+ {
+ w="Twelfth Grade";
+ return w;
+}
  if(x==13)
- return College student;
+ {
+ w="College student";
+ return w;
+}
  if(x==14)
- return Professor;
+ {
+ w="Professor";
+ return w;
+}
  
  
 
