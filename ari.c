@@ -3,6 +3,7 @@
 #include <string.h>
 #include <cs50.h>
 #include <math.h>
+#include <ctype.h>
 
 string ari(string s)
 {
@@ -10,7 +11,7 @@ string ari(string s)
  float cha=0.000000;
  float words=0.000000;
  float sentence=0.000000;
- for(i=0;s[i]!='0';i++)
+ for(i=0;s[i]!='\0';i++)
  {
   if(isalnum(s[i]))
   {
@@ -18,7 +19,7 @@ string ari(string s)
   }
  }
 
-  for(i=0;s[i]!='0';i++)
+  for(i=0;s[i]!='\0';i++)
  {
   if(s[i]=='.' || s[i]=='?' || s[i]=='!')
   {
@@ -26,7 +27,7 @@ string ari(string s)
   }
  }
 
-  for(i=0;s[i]!='0';i++)
+  for(i=0;s[i]!='\0';i++)
  {
   if(s[i]==' ')
   {
